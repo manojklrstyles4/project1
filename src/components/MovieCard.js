@@ -5,11 +5,14 @@ const MovieCard = ({ movie }) => {
   const imageUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
   
   return (
-    <Link to={`/movie/${movie.id}`} className="movie-card">
+    <>
+
+<Link to={`/movie/${movie.id}`} className="movie-card">
       <img 
+       className="movie-poster"
         src={movie.poster_path ? imageUrl : '/api/placeholder/300/450'}
         alt={movie.title}
-        className="movie-poster"
+       
       />
       <div className="movie-info">
         <h3>{movie.title}</h3>
@@ -19,6 +22,9 @@ const MovieCard = ({ movie }) => {
         </div>
       </div>
     </Link>
+    
+    </>
+    
   );
 };
 

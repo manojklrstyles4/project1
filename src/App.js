@@ -7,6 +7,7 @@ import Upcoming from './pages/Upcoming';
 import MovieDetails from './pages/MovieDetails';
 import SearchResults from './pages/SearchResults';
 import './App.css';
+import Pagination from './components/Pagination';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           </Routes>
         </main>
       </div>
+   
     </Router>
   );
 }

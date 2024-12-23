@@ -34,6 +34,8 @@ const Home = () => {
   }
 
   return (
+    <>
+    
     <div>
       <h1>Popular Movies</h1>
       <MovieGrid movies={movies} />
@@ -43,6 +45,13 @@ const Home = () => {
         onPageChange={setCurrentPage}
       />
     </div>
+
+   
+    
+    </>
+    
+
+  
   );
 };
 

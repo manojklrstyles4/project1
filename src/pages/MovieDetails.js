@@ -57,7 +57,7 @@ const MovieDetails = () => {
         <div className="cast-section">
           <h2>Cast</h2>
           <div className="cast-grid">
-            {cast.slice(0, 6).map(person => (
+            {cast.slice(0, 10).map(person => (
               <div key={person.id} className="cast-card">
                 <img
                   src={person.profile_path 

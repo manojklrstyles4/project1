@@ -49,7 +49,7 @@ const SearchResults = () => {
         </>
       ) : (
         <div className="no-results">
-          <p>No movies found matching your search.</p>
+          <p>No movies found matching your search</p>
         </div>
       )}
     </div>
